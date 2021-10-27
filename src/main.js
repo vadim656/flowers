@@ -1,7 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueCarousel from 'vue-carousel'
+import VueSplide from '@splidejs/vue-splide';
+
 import './index.css'
 import './style-app.css'
 
-createApp(App).use(VueCarousel).mount('#app')
+
+
+const app = createApp( App );
+app.use( VueSplide );
+app.mount( '#app' );

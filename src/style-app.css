@@ -14,3 +14,13 @@ body {
 header {
   background-color: #EBE6D7;
 }
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* .splide{
+  max-height: 800px;
+} */
+

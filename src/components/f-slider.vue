@@ -1,22 +1,33 @@
 <template>
-  <carousel>
-    <slide>
-      Slide 1 Content
-    </slide>
-    <slide>
-      Slide 2 Content
-    </slide>
-  </carousel>
+  <div class="w-full">
+    <splide :options="options">
+      <splide-slide>
+        <img src="../assets/img/prod1.jpg" />
+      </splide-slide>
+      <splide-slide>
+        <img src="../assets/img/prod2.jpg" />
+      </splide-slide>
+      <splide-slide>
+        <img src="../assets/img/prod3.jpg" />
+      </splide-slide>
+    </splide>
+  </div>
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
+import '@splidejs/splide/dist/css/splide.min.css'
+
 export default {
-  components: {
-    Carousel,
-    Slide
+  data () {
+    return {
+      options: {
+        rewind: true,
+        autoplay: true,
+        height: 800,
+        cover: true,
+        type: 'loop'
+      }
+    }
   }
 }
 </script>
-
-<style></style>

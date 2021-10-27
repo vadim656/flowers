@@ -2,12 +2,12 @@
   <div class="app mx-auto w-full h-full">
     <FHeader />
     <section class="">
-      <div class="bg-red-800 w-full h-screen cc">
-        <FSlider />
+      <div class="w-full cc">
+        <FSlider/>
       </div>
     </section>
     <section>
-      <div class="mx-auto flex-col justify-center container">
+      <div class="mx-auto flex-col justify-center">
         <span class="text-2xl w-full  h-20 cc">Новинки товаров</span>
         <div class="flex justify-between items-center flex-wrap">
           <FProduct />
@@ -63,8 +63,8 @@ export default {
   components: {
     FProduct,
     FHeader,
-    FSlider
-  }
+    FSlider,
+}
 }
 </script>
 

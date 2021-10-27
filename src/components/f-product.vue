@@ -1,6 +1,6 @@
 <template>
   <div
-    class="product flex-col border-l border-t border-b border-gray-600  p-4  w-1/4 h-full hover:bg-yellow-100"
+    class="product flex-col  border-l border-t border-b border-gray-600  p-4  w-1/2  2xl:w-1/4 h-full hover:bg-yellow-100"
     v-for="product in products"
     :key="product.id"
   >

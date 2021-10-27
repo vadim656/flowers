@@ -1,15 +1,15 @@
 <template>
   <div class="app mx-auto w-full h-full">
-    <FHeader/>
+    <FHeader />
     <section class="">
       <div class="bg-red-800 w-full h-screen cc">
-        Slider
+        <FSlider />
       </div>
     </section>
     <section>
-      <div class="mx-auto flex-col justify-center">
+      <div class="mx-auto flex-col justify-center container">
         <span class="text-2xl w-full  h-20 cc">Новинки товаров</span>
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center flex-wrap">
           <FProduct />
         </div>
         <div
@@ -58,11 +58,13 @@
 <script>
 import FProduct from './components/f-product.vue'
 import FHeader from './components/f-header.vue'
+import FSlider from './components/f-slider.vue'
 export default {
   components: {
     FProduct,
-    FHeader
-}
+    FHeader,
+    FSlider
+  }
 }
 </script>
 

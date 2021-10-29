@@ -9,6 +9,7 @@ module.exports = {
   variants: {
     extend: {
       padding: ['hover'],
+      filter: ['hover', 'focus'],
     },
   },
   plugins: [
